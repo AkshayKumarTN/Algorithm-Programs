@@ -13,6 +13,7 @@ namespace Algorithm_Programs
             Console.WriteLine("3.Insertion Sort");
             Console.WriteLine("4.Bubble Sort");
             Console.WriteLine("5.Merge Sort");
+            Console.WriteLine("6.Anagram Detection");
 
             Console.Write("\nEnter the Option : ");
             int option = Convert.ToInt32(Console.ReadLine());
@@ -37,6 +38,10 @@ namespace Algorithm_Programs
                 case 5:
                     MergeSort mergeSort = new MergeSort();
                     mergeSort.ReadInput();
+                    break;
+                case 6:
+                    Anagram anagram = new Anagram();
+                    anagram.ReadInput();
                     break;
                 default:
                     Console.WriteLine("Invalid options");
