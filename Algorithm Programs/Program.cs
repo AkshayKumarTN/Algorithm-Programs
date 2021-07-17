@@ -14,7 +14,8 @@ namespace Algorithm_Programs
             Console.WriteLine("4.Bubble Sort");
             Console.WriteLine("5.Merge Sort");
             Console.WriteLine("6.Anagram Detection");
-            Console.WriteLine("7.Prime numbers in Range of 0 - 1000");
+            Console.WriteLine("7.Prime Numbers in Range of 0 - 1000");
+            Console.WriteLine("8.Guess a Number");
 
             Console.Write("\nEnter the Option : ");
             int option = Convert.ToInt32(Console.ReadLine());
@@ -47,6 +48,10 @@ namespace Algorithm_Programs
                 case 7:
                     PrimeNumbers primeNumbers = new PrimeNumbers();
                     primeNumbers.FindPrime();
+                    break;
+                case 8:
+                    FindNumber findNumber = new FindNumber();
+                    findNumber.ThinkNumber();
                     break;
                 default:
                     Console.WriteLine("Invalid options");
